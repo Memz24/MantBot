@@ -8,7 +8,10 @@ client.once('ready', () => {
 
 client.on('messageCreate', (message) => {
     if (message.content === '!ping') {
-        message.channel.send('Pong!');
+        message.channel.send('pong!');
+    }
+    elif (message.content === '!die') {
+        message.channel.send('in hell. RIP');
     }
 });
 
